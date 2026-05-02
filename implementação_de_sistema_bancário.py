@@ -1,9 +1,9 @@
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod, abstractproperty
 from datetime import datetime, date
 
 class Transação(ABC):
     @property
-    @abstractmethod
+    @abstractproperty 
     def valor(self):
         pass
 
